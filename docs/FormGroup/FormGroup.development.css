@@ -1,6 +1,6 @@
 /*!
  * 
- * @license @rakuten-rex/form-group v0.0.1 2020-02-13
+ * @license @rakuten-rex/form-group v1.0.0 2020-02-14
  * FormGroup/FormGroup.development.css
  * 
  * Copyright (c) 2018-present, Rakuten, Inc.
@@ -31,10 +31,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-.rex-form-group.rex-group-row {
+.rex-form-group.rex-form-group-row {
   display: inline-block;
 }
-.rex-form-group.rex-group-row:last-child {
+.rex-form-group.rex-form-group-row:last-child {
   margin-right: 0;
 }
 .rex-form-group.rex-mt-0 {

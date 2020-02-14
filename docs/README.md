@@ -9,13 +9,13 @@ React, HTML/CSS and Vue.js
 <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/npm.svg?sanitize=true" height="16" />
 
 ```
-npm install @rakuten-rex/form-group@1.0.0 --save
+npm install @rakuten-rex/form-group@1.1.0 --save
 ```
 
 <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/yarn.svg?sanitize=true" height="16" />
 
 ```
-yarn add @rakuten-rex/form-group@1.0.0
+yarn add @rakuten-rex/form-group@1.1.0
 ```
 
 # Getting started
@@ -60,13 +60,13 @@ Example:
 // inline layout
 <FormGroup m={1}>
   <FormGroup row={true} mr={3}>
-    <input type='text' value='Element1' readOnly={true} />
+    <input type='text' defaultValue='Element1' readOnly={true} />
   </FormGroup>
   <FormGroup row={true} mr={3}>
-    <input type='text' value='Element2' readOnly={true} />
+    <input type='text' defaultValue='Element2' readOnly={true} />
   </FormGroup>
   <FormGroup row={true}>
-    <input type='text' value='Element3' readOnly={true} />
+    <input type='text' defaultValue='Element3' readOnly={true} />
   </FormGroup>
 </FormGroup>
 
@@ -76,14 +76,14 @@ Example:
     First Name:
   </label>
   <br />
-  <input id='firstName' type='text' value='First Name' />
+  <input id='firstName' type='text' defaultValue='First Name' />
 </FormGroup>
 <FormGroup mb={3}>
   <label htmlFor='lastName'>
     Last Name:
   </label>
   <br />
-  <input id='lastName' type='text' value='Last Name' />
+  <input id='lastName' type='text' defaultValue='Last Name' />
 </FormGroup>
 <FormGroup>
   <FormGroup mb={3}>
@@ -91,14 +91,14 @@ Example:
       Mail Address:
     </label>
     <br />
-    <input id='email' type='text' value='Mail Address' />
+    <input id='email' type='text' defaultValue='Mail Address' />
   </FormGroup>
   <FormGroup mb={3}>
     <label htmlFor='password'>
       Password:
     </label>
     <br />
-    <input id='password' type='text' value='Password' />
+    <input id='password' type='text' defaultValue='Password' />
   </FormGroup>
 </FormGroup>
 ```
@@ -124,9 +124,9 @@ function MyCustomComponent() {
   return (
     <!-- inline layout -->
     <div class="rex-form-group rex-m-1">
-      <div class="rex-form-group rex-group-row rex-mr-3"><input type="text" value="Element1" readonly="" /></div>
-      <div class="rex-form-group rex-group-row rex-mr-3"><input type="text" value="Element2" readonly="" /></div>
-      <div class="rex-form-group rex-group-row"><input type="text" value="Element3" readonly="" /></div>
+      <div class="rex-form-group rex-form-group-row rex-mr-3"><input type="text" value="Element1" readonly="" /></div>
+      <div class="rex-form-group rex-form-group-row rex-mr-3"><input type="text" value="Element2" readonly="" /></div>
+      <div class="rex-form-group rex-form-group-row"><input type="text" value="Element3" readonly="" /></div>
     </div>
     
     <!-- block layout  -->
@@ -153,9 +153,9 @@ function MyCustomComponent() {
   return (
     <!-- inline layout -->
     <div class="rex-form-group rex-m-1">
-      <div class="rex-form-group rex-group-row rex-mr-3"><input type="text" value="Element1" readonly="" /></div>
-      <div class="rex-form-group rex-group-row rex-mr-3"><input type="text" value="Element2" readonly="" /></div>
-      <div class="rex-form-group rex-group-row"><input type="text" value="Element3" readonly="" /></div>
+      <div class="rex-form-group rex-form-group-row rex-mr-3"><input type="text" value="Element1" readonly="" /></div>
+      <div class="rex-form-group rex-form-group-row rex-mr-3"><input type="text" value="Element2" readonly="" /></div>
+      <div class="rex-form-group rex-form-group-row"><input type="text" value="Element3" readonly="" /></div>
     </div>
     
     <!-- block layout  -->
@@ -200,9 +200,9 @@ Example:
 <template>
     <!-- inline layout -->
     <div class="rex-form-group rex-m-1">
-      <div class="rex-form-group rex-group-row rex-mr-3"><input type="text" value="Element1" readonly="" /></div>
-      <div class="rex-form-group rex-group-row rex-mr-3"><input type="text" value="Element2" readonly="" /></div>
-      <div class="rex-form-group rex-group-row"><input type="text" value="Element3" readonly="" /></div>
+      <div class="rex-form-group rex-form-group-row rex-mr-3"><input type="text" value="Element1" readonly="" /></div>
+      <div class="rex-form-group rex-form-group-row rex-mr-3"><input type="text" value="Element2" readonly="" /></div>
+      <div class="rex-form-group rex-form-group-row"><input type="text" value="Element3" readonly="" /></div>
     </div>
     
     <!-- block layout  -->
@@ -231,21 +231,21 @@ Copy-paste the stylesheet `<link>` into your `<head>` tag to load our CSS styles
 ### Using CSS Variables (Modern Websites and WebApps)
 **Production mode URL** (recommended for Static HTML projects):  
 ```
-https://unpkg.com/@rakuten-rex/form-group@1.0.0/FormGroup/FormGroup.production.min.css
+https://unpkg.com/@rakuten-rex/form-group@1.1.0/FormGroup/FormGroup.production.min.css
 ```
 
 
 Development mode URL (for local testing):  
 
 ```
-https://unpkg.com/@rakuten-rex/form-group@1.0.0/FormGroup/FormGroup.development.css
+https://unpkg.com/@rakuten-rex/form-group@1.1.0/FormGroup/FormGroup.development.css
 ```
 
 
 ### Using Static CSS (Legacy Websites)
 
 ```
-https://unpkg.com/@rakuten-rex/form-group@1.0.0/FormGroup/FormGroup.static.css
+https://unpkg.com/@rakuten-rex/form-group@1.1.0/FormGroup/FormGroup.static.css
 ```
 
 ### <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/html-5.svg?sanitize=true" height="16" /> Single component integration
@@ -262,14 +262,14 @@ Example:
     <meta charset="utf-8">
     <title>My Page</title>
     <!-- ReX form-group -->
-    <link href="https://unpkg.com/@rakuten-rex/form-group@1.0.0/FormGroup/FormGroup.production.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/@rakuten-rex/form-group@1.1.0/FormGroup/FormGroup.production.min.css" rel="stylesheet">
   </head>
   <body>
     <!-- inline layout -->
     <div class="rex-form-group rex-m-1">
-      <div class="rex-form-group rex-group-row rex-mr-3"><input type="text" value="Element1" readonly="" /></div>
-      <div class="rex-form-group rex-group-row rex-mr-3"><input type="text" value="Element2" readonly="" /></div>
-      <div class="rex-form-group rex-group-row"><input type="text" value="Element3" readonly="" /></div>
+      <div class="rex-form-group rex-form-group-row rex-mr-3"><input type="text" value="Element1" readonly="" /></div>
+      <div class="rex-form-group rex-form-group-row rex-mr-3"><input type="text" value="Element2" readonly="" /></div>
+      <div class="rex-form-group rex-form-group-row"><input type="text" value="Element3" readonly="" /></div>
     </div>
     
     <!-- block layout  -->

@@ -9,7 +9,7 @@
 @mixin rex-form-group-content {
   display: block;
 
-  &.rex-group-row {
+  &.rex-form-group-row {
     display: inline-block;
 
     &:last-child {

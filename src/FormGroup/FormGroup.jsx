@@ -27,7 +27,7 @@ export default function FormGroup({
   const mxClass = mx && !m ? MARGIN.x + mx : DEFAULT_MARGIN;
   const myClass = my && !m ? MARGIN.y + my : DEFAULT_MARGIN;
   const mAllClass = m ? MARGIN.all + m : DEFAULT_MARGIN;
-  const rowClass = row ? 'rex-group-row' : null;
+  const rowClass = row ? 'rex-form-group-row' : null;
   const classNameList = joinClassName([
     classNameDefault,
     rowClass,

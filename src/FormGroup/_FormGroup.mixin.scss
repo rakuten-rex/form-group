@@ -1,7 +1,4 @@
-@import './core.mixin';
-
 @mixin rex-form-group {
-  @include rex-core();
   @include rex-form-group-content();
   @include rex-form-group-div();
 }

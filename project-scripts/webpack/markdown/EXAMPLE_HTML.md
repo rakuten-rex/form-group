@@ -1,8 +1,8 @@
 <!-- inline layout -->
 <div class="rex-form-group rex-m-1">
-  <div class="rex-form-group rex-group-row rex-mr-3"><input type="text" value="Element1" readonly="" /></div>
-  <div class="rex-form-group rex-group-row rex-mr-3"><input type="text" value="Element2" readonly="" /></div>
-  <div class="rex-form-group rex-group-row"><input type="text" value="Element3" readonly="" /></div>
+  <div class="rex-form-group rex-form-group-row rex-mr-3"><input type="text" value="Element1" readonly="" /></div>
+  <div class="rex-form-group rex-form-group-row rex-mr-3"><input type="text" value="Element2" readonly="" /></div>
+  <div class="rex-form-group rex-form-group-row"><input type="text" value="Element3" readonly="" /></div>
 </div>
 
 <!-- block layout  -->

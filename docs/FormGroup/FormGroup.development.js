@@ -1,6 +1,6 @@
 /*!
  * 
- * @license @rakuten-rex/form-group v1.0.0 2020-02-14
+ * @license @rakuten-rex/form-group v1.1.0 2020-02-14
  * FormGroup/FormGroup.development.js
  * 
  * Copyright (c) 2018-present, Rakuten, Inc.

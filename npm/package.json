@@ -1,7 +1,7 @@
 {
   "name": "@rakuten-rex/form-group",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Form elements aligment helper",
   "main": "index.js",
   "repository": {
     "type": "git",

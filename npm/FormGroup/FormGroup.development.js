@@ -1,6 +1,6 @@
 /*!
  * 
- * @license @rakuten-rex/form-group v0.0.1 2020-02-13
+ * @license @rakuten-rex/form-group v1.0.0 2020-02-14
  * FormGroup/FormGroup.development.js
  * 
  * Copyright (c) 2018-present, Rakuten, Inc.
@@ -258,7 +258,7 @@ function FormGroup_FormGroup(_ref) {
   var mxClass = mx && !m ? MARGIN.x + mx : DEFAULT_MARGIN;
   var myClass = my && !m ? MARGIN.y + my : DEFAULT_MARGIN;
   var mAllClass = m ? MARGIN.all + m : DEFAULT_MARGIN;
-  var rowClass = row ? 'rex-group-row' : null;
+  var rowClass = row ? 'rex-form-group-row' : null;
   var classNameList = joinClassName([classNameDefault, rowClass, className, mtClass, mrClass, mbClass, mlClass, mxClass, myClass, mAllClass]);
   return external_root_React_commonjs2_react_commonjs_react_amd_react_umd_react_default.a.createElement("div", extends_default()({
     className: classNameList

@@ -1,0 +1,107 @@
+/*!
+* @license @rakuten-rex/form-group v1.0.0 2020-02-14
+* _styles.mixin.scss
+*
+* Copyright (c) 2018-present, Rakuten, Inc.
+*
+* This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.
+*/
+@mixin rex-core {
+  -webkit-text-size-adjust: 100%;
+
+  // html
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // body
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333333;
+  text-align: left;
+  background-color: inherit;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+@mixin rex-form-group {
+  @include rex-core();
+  @include rex-form-group-content();
+  @include rex-form-group-div();
+}
+
+@mixin rex-form-group-content {
+  display: block;
+
+  &.rex-form-group-row {
+    display: inline-block;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@mixin rex-form-group-div {
+  $spacer-sizes: (
+    0: 0,
+    1: 0.25rem,
+    2: 0.5rem,
+    3: 1rem,
+    4: 1.25rem,
+    5: 2rem,
+    6: 2.25rem,
+    7: 3rem,
+    8: 3.25rem,
+    9: 4rem,
+    10: 4.25rem
+  );
+
+  @each $modifier, $size in $spacer-sizes {
+    &.rex-mt-#{$modifier} {
+      margin-top: $size;
+    }
+
+    &.rex-mr-#{$modifier} {
+      margin-right: $size;
+    }
+
+    &.rex-mb-#{$modifier} {
+      margin-bottom: $size;
+    }
+
+    &.rex-ml-#{$modifier} {
+      margin-left: $size;
+    }
+
+    &.rex-mx-#{$modifier} {
+      margin-left: $size;
+      margin-right: $size;
+    }
+
+    &.rex-my-#{$modifier} {
+      margin-top: $size;
+      margin-bottom: $size;
+    }
+
+    &.rex-m-#{$modifier} {
+      margin: $size;
+    }
+  }
+}

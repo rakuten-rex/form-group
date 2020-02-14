@@ -1,0 +1,5 @@
+@import './FormGroup.mixin';
+
+.rex-form-group {
+  @include rex-form-group();
+}

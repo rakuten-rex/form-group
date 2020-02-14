@@ -6,13 +6,13 @@ React, HTML/CSS and Vue.js
 
 # How to install
 
-<img src="project-scripts/webpack/markdown/logos/npm.svg?sanitize=true" height="16" />
+<img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/npm.svg?sanitize=true" height="16" />
 
 ```
 npm install @rakuten-rex/form-group@1.0.0 --save
 ```
 
-<img src="project-scripts/webpack/markdown/logos/yarn.svg?sanitize=true" height="16" />
+<img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/yarn.svg?sanitize=true" height="16" />
 
 ```
 yarn add @rakuten-rex/form-group@1.0.0
@@ -24,7 +24,7 @@ yarn add @rakuten-rex/form-group@1.0.0
 
 For a complete guide of properties for React and HTML classes please visit our Storybook page:  
 
-[<img src="project-scripts/webpack/markdown/logos/storybook.svg?sanitize=true" height="16" />](https://rakuten-rex.github.io/form-group/)   
+[<img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/storybook.svg?sanitize=true" height="16" />](https://rakuten-rex.github.io/form-group/)   
 
 https://rakuten-rex.github.io/form-group/   
 
@@ -40,7 +40,7 @@ https://rakuten-rex.github.io/form-group/
 
 For a complete Documentation including all ReX Design System Components, Live HTML/React examples and Demos please visit:
 
-[<img src="project-scripts/webpack/markdown/logos/zh_logo.svg?sanitize=true" height="16" />](https://rakuten-rex.github.io/)   
+[<img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/zh_logo.svg?sanitize=true" height="16" />](https://rakuten-rex.github.io/)   
 
 https://rakuten-rex.github.io/   
 
@@ -48,7 +48,7 @@ https://rakuten-rex.github.io/
 # How to integrate ReX in your project
 ## A) JavaScript modules
 
-### <img src="project-scripts/webpack/markdown/logos/react.svg?sanitize=true" height="16" /> React component (JavaScript + CSS Styles)
+### <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/react.svg?sanitize=true" height="16" /> React component (JavaScript + CSS Styles)
 
 For plug and play components integration.   
 
@@ -107,7 +107,7 @@ Example:
 [Click here](https://rakuten-rex.github.io/form-group/) to see all working examples in Storybook.
 
 
-### <img src="project-scripts/webpack/markdown/logos/css-3.svg?sanitize=true" height="16" /> CSS Styles only
+### <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/css-3.svg?sanitize=true" height="16" /> CSS Styles only
 
 For your own JavaScript integration (React, Vue, Angular, etc.) or Static HTML.
 
@@ -172,7 +172,7 @@ function MyCustomComponent() {
 [Click here](https://rakuten-rex.github.io/form-group/) to see all working examples in Storybook.
 
 
-### <img src="project-scripts/webpack/markdown/logos/sass.svg?sanitize=true" height="16" /> Sass mixins
+### <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/sass.svg?sanitize=true" height="16" /> Sass mixins
 
 For your own customization of styles (React, Vue, Angular, etc.) or Static HTML.
 
@@ -188,7 +188,7 @@ Example:
 }
 ```
 
-### <img src="project-scripts/webpack/markdown/logos/vue.svg?sanitize=true" height="16" /> Vue.js
+### <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/vue.svg?sanitize=true" height="16" /> Vue.js
 
 A basic implementation based on HTML structure and import CSS styles into your component.
 
@@ -248,7 +248,7 @@ https://unpkg.com/@rakuten-rex/form-group@1.0.0/FormGroup/FormGroup.development.
 https://unpkg.com/@rakuten-rex/form-group@1.0.0/FormGroup/FormGroup.static.css
 ```
 
-### <img src="project-scripts/webpack/markdown/logos/html-5.svg?sanitize=true" height="16" /> Single component integration
+### <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/html-5.svg?sanitize=true" height="16" /> Single component integration
 Add it from unpkg.com CDN (NPM) into your HTML template or HTML static page.
 
 Example: 
@@ -287,19 +287,19 @@ Example:
 
 || Site  | URL |
 |-------------| ------------- | ------------- |
-|<img src="project-scripts/webpack/markdown/logos/github-icon.svg?sanitize=true" height="16" />| Github (Source Code) | https://github.com/rakuten-rex |
-|<img src="project-scripts/webpack/markdown/logos/npm.svg?sanitize=true" height="16" />| NPM (Package distribution)  | https://www.npmjs.com/org/rakuten-rex  |
-|<img src="project-scripts/webpack/markdown/logos/zh_logo.svg?sanitize=true" height="16" />| ZeroHeight (Documentation)  | https://zeroheight.com/390c074f3 |
+|<img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/github-icon.svg?sanitize=true" height="16" />| Github (Source Code) | https://github.com/rakuten-rex |
+|<img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/npm.svg?sanitize=true" height="16" />| NPM (Package distribution)  | https://www.npmjs.com/org/rakuten-rex  |
+|<img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/zh_logo.svg?sanitize=true" height="16" />| ZeroHeight (Documentation)  | https://zeroheight.com/390c074f3 |
 
 ## Project Stack
 
 | Front-end |
 |-------------|
-| <img src="project-scripts/webpack/markdown/logos/html-5.svg?sanitize=true" height="16" /> HTML5 <img src="project-scripts/webpack/markdown/logos/css-3.svg?sanitize=true" height="16" /> CSS3 & Sass  <img src="project-scripts/webpack/markdown/logos/javascript.svg?sanitize=true" height="16" /> JavaScript ES6 <img src="project-scripts/webpack/markdown/logos/react.svg?sanitize=true" height="16" /> React |
+| <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/html-5.svg?sanitize=true" height="16" /> HTML5 <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/css-3.svg?sanitize=true" height="16" /> CSS3 & Sass  <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/javascript.svg?sanitize=true" height="16" /> JavaScript ES6 <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/react.svg?sanitize=true" height="16" /> React |
 
 | Tools |
 |-------------|
-| <img src="project-scripts/webpack/markdown/logos/webpack.svg?sanitize=true" height="16" /> webpack <img src="project-scripts/webpack/markdown/logos/storybook-icon.svg?sanitize=true" height="16" /> Storybook <img src="project-scripts/webpack/markdown/logos/babel.svg?sanitize=true" height="16" /> Babel <img src="project-scripts/webpack/markdown/logos/eslint.svg?sanitize=true" height="16" /> ESLint <img src="project-scripts/webpack/markdown/logos/prettier.svg?sanitize=true" height="16" /> Prettier |
+| <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/webpack.svg?sanitize=true" height="16" /> webpack <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/storybook-icon.svg?sanitize=true" height="16" /> Storybook <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/babel.svg?sanitize=true" height="16" /> Babel <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/eslint.svg?sanitize=true" height="16" /> ESLint <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/prettier.svg?sanitize=true" height="16" /> Prettier |
 
 ## Features
 
@@ -316,93 +316,11 @@ Example:
 
 | PC | Mobile 
 |-------------|-------------|
-| <img src="project-scripts/webpack/markdown/browsers/chrome.svg?sanitize=true" height="14" /> Chrome 49+ | <img src="project-scripts/webpack/markdown/browsers/apple.svg?sanitize=true" height="14" /> iOS 9+ (Safari 9.3+, Chrome 78+) |
-| <img src="project-scripts/webpack/markdown/browsers/safari.svg?sanitize=true" height="14" /> Safari 9.1+ | <img src="project-scripts/webpack/markdown/browsers/android-icon.svg?sanitize=true" height="14" /> Android 6+ (Chrome 78+, Android Browser 76+) |
-| <img src="project-scripts/webpack/markdown/browsers/firefox.svg?sanitize=true" height="14" /> Firefox 31+ | |
-| <img src="project-scripts/webpack/markdown/browsers/microsoft-edge.svg?sanitize=true" height="14" /> MS Edge 15+ | |
-| <img src="project-scripts/webpack/markdown/browsers/internetexplorer.svg?sanitize=true" height="14" /> IE 11+ | |
+| <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/browsers/chrome.svg?sanitize=true" height="14" /> Chrome 49+ | <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/browsers/apple.svg?sanitize=true" height="14" /> iOS 9+ (Safari 9.3+, Chrome 78+) |
+| <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/browsers/safari.svg?sanitize=true" height="14" /> Safari 9.1+ | <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/browsers/android-icon.svg?sanitize=true" height="14" /> Android 6+ (Chrome 78+, Android Browser 76+) |
+| <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/browsers/firefox.svg?sanitize=true" height="14" /> Firefox 31+ | |
+| <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/browsers/microsoft-edge.svg?sanitize=true" height="14" /> MS Edge 15+ | |
+| <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/browsers/internetexplorer.svg?sanitize=true" height="14" /> IE 11+ | |
 
 
-
-# Development environment
-## How to initialize the project for a new repository
-
-```
-npm run setup
-```
-
-## How to add a new ReX Component to the project
-
-```
-npm run generate:rex-component
-```
-
-## How to start the project
-
-The development environment is based on Storybook, for more info visit https://storybook.js.org/ .   
-
-```
-npm start
-```
-
-## How to build
-
-The build task will generate a NPM package ready to be published and also a static version of Storybook, one folder for NPM `./npm/@rakuten-rex/form-group` and other one for Github pages `./docs`.   
-
-```
-npm run build
-```
-
-## How to check build version
-
-By using Node http-server, you can check the static version of Storybook with production settings and builds.
-
-```
-npm run serve
-```
-
-## How to publish to NPM
-### Build the project
-
-```
-npm run build
-```
-
-### Publish to NPM
-
-Build the project first and then publish it to NPM.  
-
-```
-npm run publish:component
-```
-
-Once the process finish, take a look to the NPM site:   
-
-https://www.npmjs.com/package/@rakuten-rex/form-group
-
-
-# Javascript and React related documents
-
-Take a look to this nice documentation pages to be more familiar with React and modern Javascript:
-
-## Official site
-https://reactjs.org/docs/getting-started.html   
-
-## Google Web Fundamentals (the whole site is a must to read)
-https://developers.google.com/web/fundamentals/
-
-## Webpack as magic bundler
-https://webpack.js.org/
-
-## Composing Software series (how to understand Funcional Programming)
-https://medium.com/javascript-scene/composing-software-an-introduction-27b72500d6ea   
-
-## Common React patterns
-https://reactpatterns.com   
-
-## Understanding Storybook with nice images
-https://blog.hichroma.com/the-delightful-storybook-workflow-b322b76fd07   
-
-## Some guidelines for clean code
-https://americanexpress.io/clean-code-dirty-code/
 

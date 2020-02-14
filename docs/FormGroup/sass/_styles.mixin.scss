@@ -1,5 +1,5 @@
 /*!
-* @license @rakuten-rex/form-group v0.0.1 2020-02-13
+* @license @rakuten-rex/form-group v1.0.0 2020-02-14
 * _styles.mixin.scss
 *
 * Copyright (c) 2018-present, Rakuten, Inc.
@@ -49,7 +49,7 @@
 @mixin rex-form-group-content {
   display: block;
 
-  &.rex-group-row {
+  &.rex-form-group-row {
     display: inline-block;
 
     &:last-child {

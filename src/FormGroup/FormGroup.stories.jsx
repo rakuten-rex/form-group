@@ -113,6 +113,7 @@ export const MixedLayout = () => {
 };
 export const WithDynamicProps = () => {
   const values = {
+    Default: 'default',
     0: 0,
     1: 1,
     2: 2,

@@ -17,16 +17,12 @@
 
 @mixin rex-form-group-div {
   $spacer-sizes: (0: 0,
-      1: .25rem,
-      2: .5rem,
-      3: 1rem,
-      4: 1.25rem,
-      5: 2rem,
-      6: 2.25rem,
-      7: 3rem,
-      8: 3.25rem,
-      9: 4rem,
-      10: 4.25rem);
+      1: .5rem, //8px
+      2: 1rem, //16px
+      3: 1.5rem, //24px
+      4: 2rem, //32px
+      5: 2.5rem, //40px
+  ); 
 
   @each $modifier,
   $size in $spacer-sizes {

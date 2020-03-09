@@ -2,8 +2,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/extensions */
 import React from 'react';
-import { text } from '@storybook/addon-knobs';
 import FormGroup from 'src/FormGroup';
+import { select } from '@storybook/addon-knobs';
 import { withKnobs } from '../../.storybook/helper';
 
 /**
@@ -107,6 +107,51 @@ export const MixedLayout = () => {
           <br />
           <input id="year" type="text" defaultValue="year" readOnly />
         </FormGroup>
+      </FormGroup>
+    </>
+  );
+};
+export const WithDynamicProps = () => {
+  const values = {
+    0: 0,
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+  };
+
+  const m = select('Margin (rem)', values, 'default');
+  let mx = select('Margin Left & Right (rem)', values, 'default');
+  let my = select('Margin Top & Bottom (rem)', values, 'default');
+  let mt = select('Margin Top (rem)', values, 'default');
+  let mr = select('Margin Right (rem)', values, 'default');
+  let mb = select('Margin Bottom (rem)', values, 'default');
+  let ml = select('Margin Left (rem)', values, 'default');
+
+  let margin = {};
+
+  if (m > 0) {
+    margin = { m };
+  } else if (mx > 0 || my > 0) {
+    mx = mx === 'default' ? null : mx;
+    my = my === 'default' ? null : my;
+
+    margin = { mx, my };
+  } else {
+    mt = mt === 'default' ? null : mt;
+    mr = mr === 'default' ? null : mr;
+    mb = mb === 'default' ? null : mb;
+    ml = ml === 'default' ? null : ml;
+
+    margin = { mt, mr, mb, ml };
+  }
+  return (
+    <>
+      <FormGroup {...margin}>
+        <label htmlFor="firstName">First Name:</label>
+        <br />
+        <input id="firstName" type="text" defaultValue="First Name" />
       </FormGroup>
     </>
   );

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable import/no-unresolved */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/extensions */
@@ -119,7 +120,11 @@ export const WithDynamicProps = () => {
     2: 2,
     3: 3,
     4: 4,
-    5: 5,
+    6: 6,
+    7: 7,
+    8: 8,
+    9: 9,
+    10: 10,
   };
 
   const m = select('Margin (rem)', values, 'default');
@@ -145,7 +150,7 @@ export const WithDynamicProps = () => {
     mb = mb === 'default' ? null : mb;
     ml = ml === 'default' ? null : ml;
 
-    margin = { mt, mr, mb, ml };
+    margin = { m, mt, mr, mb, ml };
   }
   return (
     <>

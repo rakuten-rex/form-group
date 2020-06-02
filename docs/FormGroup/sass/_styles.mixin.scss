@@ -1,5 +1,5 @@
 /*!
-* @license @rakuten-rex/form-group v1.1.0 2020-02-14
+* @license @rakuten-rex/form-group v1.2.0 2020-06-02
 * _styles.mixin.scss
 *
 * Copyright (c) 2018-present, Rakuten, Inc.
@@ -27,15 +27,25 @@
   $spacer-sizes: (
     0: 0,
     1: 0.25rem,
-    2: 0.5rem,
-    3: 1rem,
-    4: 1.25rem,
-    5: 2rem,
-    6: 2.25rem,
-    7: 3rem,
-    8: 3.25rem,
-    9: 4rem,
-    10: 4.25rem
+    //4px
+      2: 0.5rem,
+    //8px
+      3: 0.75rem,
+    //12px
+      4: 1rem,
+    //16px
+      5: 1.25rem,
+    //20px
+      6: 1.5rem,
+    //24px
+      7: 1.75rem,
+    //28px
+      8: 2rem,
+    //32px
+      9: 2.25rem,
+    //36px
+      10: 2.5rem,
+    //40px
   );
 
   @each $modifier, $size in $spacer-sizes {

@@ -4,7 +4,7 @@
 /* eslint-disable import/extensions */
 import React from 'react';
 import FormGroup from 'src/FormGroup';
-import { select } from '@storybook/addon-knobs';
+import { select, boolean } from '@storybook/addon-knobs';
 import { withKnobs } from '../../.storybook/helper';
 
 /**
@@ -114,7 +114,6 @@ export const MixedLayout = () => {
 };
 export const WithDynamicProps = () => {
   const values = {
-    Default: 'default',
     0: 0,
     1: 1,
     2: 2,
@@ -127,6 +126,7 @@ export const WithDynamicProps = () => {
     10: 10,
   };
 
+  const row = boolean('Layout (Block/Inline)', false);
   const m = select('Margin (rem)', values, 'default');
   let mx = select('Margin Left & Right (rem)', values, 'default');
   let my = select('Margin Top & Bottom (rem)', values, 'default');
@@ -154,10 +154,15 @@ export const WithDynamicProps = () => {
   }
   return (
     <>
-      <FormGroup {...margin}>
+      <FormGroup {...margin} row={row}>
         <label htmlFor="firstName">First Name:</label>
         <br />
         <input id="firstName" type="text" defaultValue="First Name" />
+      </FormGroup>
+        <FormGroup {...margin} row={row}>
+        <label htmlFor="lastName">Last Name:</label>
+        <br />
+        <input id="lastName" type="text" defaultValue="Last Name" />
       </FormGroup>
     </>
   );

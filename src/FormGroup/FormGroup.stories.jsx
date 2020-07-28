@@ -23,13 +23,11 @@ export const DefaultView = () => {
   return (
     <FormGroup>
       <TextFieldLabelHelper
-        id="firstname"
-        name="firstname"
-        placeholder="Placeholder"
-        htmlFor="firstname"
-        label="Label"
+        id="name01"
+        name="name"
+        htmlFor="name"
+        label="Name"
         labelId="labelId"
-        helper="Helper Text"
       />
     </FormGroup>
   );
@@ -40,29 +38,26 @@ export const InlineLayout = () => {
     <>
       <FormGroup row mr={6}>
         <TextFieldLabelHelper
-          id="element1"
+          id="dog"
           name="element1"
           htmlFor="element1"
           label="Label1"
-          labelId="labelId"
         />
       </FormGroup>
       <FormGroup row mr={6}>
         <TextFieldLabelHelper
-          id="element2"
+          id="cat"
           name="element2"
           htmlFor="element2"
           label="Label2"
-          labelId="labelId"
         />
       </FormGroup>
       <FormGroup row>
         <TextFieldLabelHelper
-          id="element3"
+          id="horse"
           name="element3"
           htmlFor="element3"
           label="Label3"
-          labelId="labelId"
         />
       </FormGroup>
     </>
@@ -73,39 +68,31 @@ export const BlockLayout = () => {
     <>
       <FormGroup mb={6}>
         <TextFieldLabelHelper
-          id="firstName"
-          name="firstName"
-          htmlFor="firstName"
+          name="firstName1"
+          htmlFor="firstName1"
           label="First Name"
-          labelId="firstName"
         />
       </FormGroup>
       <FormGroup mb={6}>
         <TextFieldLabelHelper
-          id="lastName"
-          name="lastName"
-          htmlFor="lastName"
+          name="lastName1"
+          htmlFor="lastName1"
           label="Last Name"
-          labelId="lastName"
         />
       </FormGroup>
       <FormGroup>
         <FormGroup mb={6}>
           <TextFieldLabelHelper
-            id="email"
             name="email"
             htmlFor="email"
             label="Email"
-            labelId="email"
           />
         </FormGroup>
         <FormGroup mb={6}>
           <TextFieldLabelHelper
-            id="password"
             name="password"
             htmlFor="password"
             label="Password"
-            labelId="password"
           />
         </FormGroup>
       </FormGroup>
@@ -119,38 +106,30 @@ export const MixedLayout = () => {
       <FormGroup mb={6}>
         <FormGroup row mr={6} mb={6}>
           <TextFieldLabelHelper
-            id="firstName"
             name="firstName"
             htmlFor="firstName"
             label="First Name"
-            labelId="firstName"
           />
         </FormGroup>
         <FormGroup row mb={6}>
           <TextFieldLabelHelper
-            id="lastName"
             name="lastName"
             htmlFor="lastName"
             label="Last Name"
-            labelId="lastName"
           />
         </FormGroup>
         <FormGroup mb={6}>
           <TextFieldLabelHelper
-            id="email"
             name="email"
             htmlFor="email"
             label="Email"
-            labelId="email"
           />
         </FormGroup>
         <FormGroup mb={6}>
           <TextFieldLabelHelper
-            id="address"
             name="address"
             htmlFor="address"
             label="Address"
-            labelId="address"
           />
         </FormGroup>
       </FormGroup>
@@ -203,20 +182,16 @@ export const WithDynamicProps = () => {
     <>
       <FormGroup {...margin} row={row}>
         <TextFieldLabelHelper
-          id="firstName"
           name="firstName"
           htmlFor="firstName"
           label="First Name"
-          labelId="firstName"
         />
       </FormGroup>
       <FormGroup {...margin} row={row}>
         <TextFieldLabelHelper
-          id="lastName"
           name="lastName"
           htmlFor="lastName"
           label="Last Name"
-          labelId="lastName"
         />
       </FormGroup>
     </>

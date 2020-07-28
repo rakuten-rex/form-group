@@ -1,6 +1,6 @@
 {
   "name": "@rakuten-rex/form-group",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Form elements aligment helper",
   "main": "src/index.jsx",
   "scripts": {
@@ -36,6 +36,7 @@
   },
   "homepage": "https://rakuten-rex.github.io/form-group/",
   "dependencies": {
+    "@rakuten-rex/text-field": "1.3.0",
     "prop-types": "15.7.2",
     "react": "16.12.0",
     "react-dom": "16.12.0"

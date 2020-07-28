@@ -4,6 +4,7 @@
 /* eslint-disable import/extensions */
 import React from 'react';
 import FormGroup from 'src/FormGroup';
+import TextFieldLabelHelper from '@rakuten-rex/text-field/TextFieldLabelHelper';
 import { select, boolean } from '@storybook/addon-knobs';
 import { withKnobs } from '../../.storybook/helper';
 
@@ -21,7 +22,13 @@ export default {
 export const DefaultView = () => {
   return (
     <FormGroup>
-      <input type="text" defaultValue="Element1" readOnly />
+      <TextFieldLabelHelper
+        id="name01"
+        name="name"
+        htmlFor="name"
+        label="Name"
+        labelId="labelId"
+      />
     </FormGroup>
   );
 };
@@ -29,16 +36,29 @@ export const DefaultView = () => {
 export const InlineLayout = () => {
   return (
     <>
-      <FormGroup m={1}>
-        <FormGroup row mr={3}>
-          <input type="text" defaultValue="Element1" readOnly />
-        </FormGroup>
-        <FormGroup row mr={3}>
-          <input type="text" defaultValue="Element2" readOnly />
-        </FormGroup>
-        <FormGroup row>
-          <input type="text" defaultValue="Element3" readOnly />
-        </FormGroup>
+      <FormGroup row mr={6}>
+        <TextFieldLabelHelper
+          id="dog"
+          name="element1"
+          htmlFor="element1"
+          label="Label1"
+        />
+      </FormGroup>
+      <FormGroup row mr={6}>
+        <TextFieldLabelHelper
+          id="cat"
+          name="element2"
+          htmlFor="element2"
+          label="Label2"
+        />
+      </FormGroup>
+      <FormGroup row>
+        <TextFieldLabelHelper
+          id="horse"
+          name="element3"
+          htmlFor="element3"
+          label="Label3"
+        />
       </FormGroup>
     </>
   );
@@ -46,26 +66,34 @@ export const InlineLayout = () => {
 export const BlockLayout = () => {
   return (
     <>
-      <FormGroup mb={3}>
-        <label htmlFor="firstName">First Name:</label>
-        <br />
-        <input id="firstName" type="text" defaultValue="First Name" />
+      <FormGroup mb={6}>
+        <TextFieldLabelHelper
+          name="firstName1"
+          htmlFor="firstName1"
+          label="First Name"
+        />
       </FormGroup>
-      <FormGroup mb={3}>
-        <label htmlFor="lastName">Last Name:</label>
-        <br />
-        <input id="lastName" type="text" defaultValue="Last Name" />
+      <FormGroup mb={6}>
+        <TextFieldLabelHelper
+          name="lastName1"
+          htmlFor="lastName1"
+          label="Last Name"
+        />
       </FormGroup>
       <FormGroup>
-        <FormGroup mb={3}>
-          <label htmlFor="email">Mail Address:</label>
-          <br />
-          <input id="email" type="text" defaultValue="Mail Address" />
+        <FormGroup mb={6}>
+          <TextFieldLabelHelper
+            name="email"
+            htmlFor="email"
+            label="Email"
+          />
         </FormGroup>
-        <FormGroup mb={3}>
-          <label htmlFor="password">Password:</label>
-          <br />
-          <input id="password" type="text" defaultValue="Password" />
+        <FormGroup mb={6}>
+          <TextFieldLabelHelper
+            name="password"
+            htmlFor="password"
+            label="Password"
+          />
         </FormGroup>
       </FormGroup>
     </>
@@ -75,38 +103,34 @@ export const BlockLayout = () => {
 export const MixedLayout = () => {
   return (
     <>
-      <FormGroup mb={3}>
-        <label htmlFor="firstName">First Name:</label>
-        <br />
-        <input id="firstName" type="text" defaultValue="First Name" />
-      </FormGroup>
-      <FormGroup mb={3}>
-        <label htmlFor="lastName">Last Name:</label>
-        <br />
-        <input id="lastName" type="text" defaultValue="Last Name" />
-      </FormGroup>
-      <FormGroup>
-        <FormGroup mb={3}>
-          <label htmlFor="email">Mail Address:</label>
-          <br />
-          <input id="email" type="text" defaultValue="Mail Address" />
+      <FormGroup mb={6}>
+        <FormGroup row mr={6} mb={6}>
+          <TextFieldLabelHelper
+            name="firstName"
+            htmlFor="firstName"
+            label="First Name"
+          />
         </FormGroup>
-        <FormGroup mb={3}>
-          <label htmlFor="password">Password:</label>
-          <br />
-          <input id="password" type="text" defaultValue="Password" />
+        <FormGroup row mb={6}>
+          <TextFieldLabelHelper
+            name="lastName"
+            htmlFor="lastName"
+            label="Last Name"
+          />
         </FormGroup>
-      </FormGroup>
-      <FormGroup mb={3}>
-        <FormGroup row mr={3}>
-          <label htmlFor="month">Month:</label>
-          <br />
-          <input id="month" type="text" defaultValue="month" readOnly />
+        <FormGroup mb={6}>
+          <TextFieldLabelHelper
+            name="email"
+            htmlFor="email"
+            label="Email"
+          />
         </FormGroup>
-        <FormGroup row>
-          <label htmlFor="year">Year:</label>
-          <br />
-          <input id="year" type="text" defaultValue="year" readOnly />
+        <FormGroup mb={6}>
+          <TextFieldLabelHelper
+            name="address"
+            htmlFor="address"
+            label="Address"
+          />
         </FormGroup>
       </FormGroup>
     </>
@@ -114,6 +138,7 @@ export const MixedLayout = () => {
 };
 export const WithDynamicProps = () => {
   const values = {
+    default: 'default',
     0: 0,
     1: 1,
     2: 2,
@@ -127,17 +152,18 @@ export const WithDynamicProps = () => {
   };
 
   const row = boolean('Layout (Block/Inline)', false);
-  const m = select('Margin (rem)', values, 'default');
-  let mx = select('Margin Left & Right (rem)', values, 'default');
-  let my = select('Margin Top & Bottom (rem)', values, 'default');
-  let mt = select('Margin Top (rem)', values, 'default');
-  let mr = select('Margin Right (rem)', values, 'default');
-  let mb = select('Margin Bottom (rem)', values, 'default');
-  let ml = select('Margin Left (rem)', values, 'default');
+  let m = select('Margin (rem)', values, '');
+  let mx = select('Margin Left & Right (rem)', values, '');
+  let my = select('Margin Top & Bottom (rem)', values, '');
+  let mt = select('Margin Top (rem)', values, '');
+  let mr = select('Margin Right (rem)', values, '');
+  let mb = select('Margin Bottom (rem)', values, '');
+  let ml = select('Margin Left (rem)', values, '');
 
   let margin = {};
 
   if (m > 0) {
+    m = m === 'default'||'' ? null : m;
     margin = { m };
   } else if (mx > 0 || my > 0) {
     mx = mx === 'default' ? null : mx;
@@ -155,14 +181,18 @@ export const WithDynamicProps = () => {
   return (
     <>
       <FormGroup {...margin} row={row}>
-        <label htmlFor="firstName">First Name:</label>
-        <br />
-        <input id="firstName" type="text" defaultValue="First Name" />
+        <TextFieldLabelHelper
+          name="firstName"
+          htmlFor="firstName"
+          label="First Name"
+        />
       </FormGroup>
-        <FormGroup {...margin} row={row}>
-        <label htmlFor="lastName">Last Name:</label>
-        <br />
-        <input id="lastName" type="text" defaultValue="Last Name" />
+      <FormGroup {...margin} row={row}>
+        <TextFieldLabelHelper
+          name="lastName"
+          htmlFor="lastName"
+          label="Last Name"
+        />
       </FormGroup>
     </>
   );

@@ -9,13 +9,13 @@ React, HTML/CSS and Vue.js
 <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/npm.svg?sanitize=true" height="16" />
 
 ```
-npm install @rakuten-rex/form-group@1.3.0 --save
+npm install @rakuten-rex/form-group@1.4.0 --save
 ```
 
 <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/yarn.svg?sanitize=true" height="16" />
 
 ```
-yarn add @rakuten-rex/form-group@1.3.0
+yarn add @rakuten-rex/form-group@1.4.0
 ```
 
 # Getting started
@@ -231,21 +231,21 @@ Copy-paste the stylesheet `<link>` into your `<head>` tag to load our CSS styles
 ### Using CSS Variables (Modern Websites and WebApps)
 **Production mode URL** (recommended for Static HTML projects):  
 ```
-https://unpkg.com/@rakuten-rex/form-group@1.3.0/FormGroup/FormGroup.production.min.css
+https://unpkg.com/@rakuten-rex/form-group@1.4.0/FormGroup/FormGroup.production.min.css
 ```
 
 
 Development mode URL (for local testing):  
 
 ```
-https://unpkg.com/@rakuten-rex/form-group@1.3.0/FormGroup/FormGroup.development.css
+https://unpkg.com/@rakuten-rex/form-group@1.4.0/FormGroup/FormGroup.development.css
 ```
 
 
 ### Using Static CSS (Legacy Websites)
 
 ```
-https://unpkg.com/@rakuten-rex/form-group@1.3.0/FormGroup/FormGroup.static.css
+https://unpkg.com/@rakuten-rex/form-group@1.4.0/FormGroup/FormGroup.static.css
 ```
 
 ### <img src="https://raw.githubusercontent.com/rakuten-rex/form-group/master/project-scripts/webpack/markdown/logos/html-5.svg?sanitize=true" height="16" /> Single component integration
@@ -262,7 +262,7 @@ Example:
     <meta charset="utf-8">
     <title>My Page</title>
     <!-- ReX form-group -->
-    <link href="https://unpkg.com/@rakuten-rex/form-group@1.3.0/FormGroup/FormGroup.production.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/@rakuten-rex/form-group@1.4.0/FormGroup/FormGroup.production.min.css" rel="stylesheet">
   </head>
   <body>
     <!-- inline layout -->
